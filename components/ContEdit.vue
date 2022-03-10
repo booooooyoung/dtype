@@ -29,7 +29,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -49,7 +49,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -69,7 +69,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -89,7 +89,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -109,7 +109,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -129,7 +129,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -149,7 +149,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -169,7 +169,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -189,7 +189,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -209,7 +209,7 @@
           <div class="box_wrap">
               <div class="img_box">
                 <img id="preview-image" src="../assets/dtype_editor_default_image.png">
-                <input type="file" id="input-image"/>
+                <input type="file" id="input-image" @change="readImage" accept="image/*"/>
               </div>
               <div class="input_box">
                   <label for="title">Title</label>
@@ -265,7 +265,6 @@ export default {
                   readImage(e.target);
                   console.log("inputImage : " + inputImage)
                 })
-                this.readImage(inputImage);
               }
             },
   }
