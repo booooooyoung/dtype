@@ -3,7 +3,7 @@
     <p class="info_title">EDIT</p>
     <ul class="info_cont_box">
         <li>
-          <b-navbar-dropdown label="#01 ~">
+          <b-navbar-dropdown label="편집 바로 가기" style="font-weight:400!important;">
               <b-navbar-item href="#00">
                     #00
                 </b-navbar-item>
@@ -53,6 +53,9 @@ export default {
   div{
     padding: 30px;
     box-sizing: border-box;
+  }
+  a{
+    font-weight: 400!important;
   }
   .count{
     background: var(--green);

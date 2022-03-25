@@ -254,17 +254,13 @@ export default {
                   // 이미지가 로드가 된 경우
                   reader.onload = e => {
                     console.log("e.target.result : " + e.target.result);
-                      const previewImage = document.getElementById("preview-image")
+                      const previewImage =  input.parentNode.firstChild;
                       previewImage.src = e.target.result
                       
                   }
                   // reader가 이미지 읽도록 하기
                   reader.readAsDataURL(input.files[0])
-                  const inputImage = document.getElementById("input-image")
-                  inputImage.addEventListener("change", e => {
-                  readImage(e.target);
-                  console.log("inputImage : " + inputImage)
-                })
+                  
               }
             },
   }
@@ -281,6 +277,7 @@ export default {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    position: relative;
   }
   h3{
      padding: 0 0 10px;
@@ -351,8 +348,7 @@ textarea::placeholder{
     width: 200px;
   }
   .btn_box{
-    position: absolute;
-    bottom: -20px;
-    right: 20px;
+    text-align: right;
+    margin-bottom: 0;
   }
 </style>

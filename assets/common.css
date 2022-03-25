@@ -39,7 +39,6 @@ a{
     text-decoration: none;
     color: white;
     font-size: 0.6rem;
-    font-weight: 300;
 }
 input,label{
     display: block;
@@ -88,6 +87,9 @@ label{
 }
 .btn_n{
     background-color: var(--orange-01);
+    color: white;
+}
+.btn_n:hover{
     color: white;
 }
 .btn_p{
