@@ -37,8 +37,8 @@ export default {
       })
       routes.push({
         path: "/",
-        component: resolve(__dirname, 'pages/login.vue'),
-        name: "login"
+        component: resolve(__dirname, 'pages/logIn.vue'),
+        name: "logIn"
       })
     }
   },
