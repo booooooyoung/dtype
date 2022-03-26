@@ -66,4 +66,5 @@ export default {
   build: {
   },
   
+  buildDir: "dist"
 }
